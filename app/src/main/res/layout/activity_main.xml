@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:id="@+id/block_red"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginVertical="16dp"
+        android:orientation="vertical"
+        android:background="@color/gray" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/block_yellow"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginVertical="16dp"
+        android:orientation="vertical"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/block_green"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginVertical="16dp"
+        android:orientation="vertical"
+        android:background="@color/gray" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Start"
+        android:textSize="20sp"/>
+
+</LinearLayout>
