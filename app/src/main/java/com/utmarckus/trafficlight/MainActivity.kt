@@ -53,9 +53,9 @@ class MainActivity : AppCompatActivity() {
                         resetBlocksColor()
 
                         when (position) {
-                            0 -> blockRed.setBackgroundColor(resources.getColor(R.color.red))
-                            1 -> blockYellow.setBackgroundColor(resources.getColor(R.color.yellow))
-                            2 -> blockGreen.setBackgroundColor(resources.getColor(R.color.green))
+                            0 -> blockRed.setBackgroundColor(getColor(R.color.red))
+                            1 -> blockYellow.setBackgroundColor(getColor(R.color.yellow))
+                            2 -> blockGreen.setBackgroundColor(getColor(R.color.green))
                         }
                         position = (position + 1) % 3
                         Thread.sleep(1500)
@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("ResourceAsColor")
     fun resetBlocksColor() {
         blockRed.setBackgroundColor(resources.getColor(R.color.gray))
-        blockYellow.setBackgroundColor(resources.getColor(R.color.gray))
-        blockGreen.setBackgroundColor(resources.getColor(R.color.gray))
+        blockYellow.setBackgroundColor(getColor(R.color.gray))
+        blockGreen.setBackgroundColor(getColor(R.color.gray))
     }
 }
