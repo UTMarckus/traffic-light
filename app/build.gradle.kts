@@ -5,15 +5,13 @@ plugins {
 android {
     namespace = "com.utmarckus.trafficlight"
     compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
+        version = release(37)
     }
 
     defaultConfig {
         applicationId = "com.utmarckus.trafficlight"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
 
